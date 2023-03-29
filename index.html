@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac mini</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+        <header class="header">
+            <div class="group-header">
+                <nav class="gnb">
+                    <ul class="nav-list">
+                        <li class="nav-item logo"> <h1 class="logo"><a href=""><span class="blind">애플 로고</span><svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"></path></svg></a></h1></li>
+                        <li class="nav-item store"><a href="">스토어</a></li>
+                        <li class="nav-item mac"><a href="">Mac</a></li>
+                        <li class="nav-item ipad"><a href="">iPad</a></li>
+                        <li class="nav-item iphone"><a href="">iPhone</a></li>
+                        <li class="nav-item watch"><a href="">Watch</a></li>
+                        <li class="nav-item airpods"><a href="">AirPods</a></li>
+                        <li class="nav-item tv"><a href="">TV 및 홈</a></li>
+                        <li class="nav-item entertain"><a href="">엔터테인먼트</a></li>
+                        <li class="nav-item accessory"><a href="">액세서리</a></li>
+                        <li class="nav-item customer"><a href="">고객지원</a></li>
+                        <li class="nav-item search"><a href="" class="btn search"><span class="blind">검색버튼</span><svg xmlns="http://www.w3.org/2000/svg" width="15px" height="44px" viewBox="0 0 15 44"><path d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z"></path></svg></a></li>
+                        <li class="nav-item cart"><a href="" class="btn cart"><span class="blind">장바구니버튼</span><svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m11.3535 16.0283h-1.0205a3.4229 3.4229 0 0 0 -3.333-2.9648 3.4229 3.4229 0 0 0 -3.333 2.9648h-1.02a2.1184 2.1184 0 0 0 -2.117 2.1162v7.7155a2.1186 2.1186 0 0 0 2.1162 2.1167h8.707a2.1186 2.1186 0 0 0 2.1168-2.1167v-7.7155a2.1184 2.1184 0 0 0 -2.1165-2.1162zm-4.3535-1.8652a2.3169 2.3169 0 0 1 2.2222 1.8652h-4.4444a2.3169 2.3169 0 0 1 2.2222-1.8652zm5.37 11.6969a1.0182 1.0182 0 0 1 -1.0166 1.0171h-8.7069a1.0182 1.0182 0 0 1 -1.0165-1.0171v-7.7155a1.0178 1.0178 0 0 1 1.0166-1.0166h8.707a1.0178 1.0178 0 0 1 1.0164 1.0166z"></path></svg></a></li>
+                        <li class="nav-item menu"><a href="" class="btn menu"> <span class="blind">모바일메뉴버튼</span><svg width="18" height="18" viewBox="0 0 18 18"><polyline id="globalnav-menutrigger-bread-bottom" class="globalnav-menutrigger-bread globalnav-menutrigger-bread-bottom" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" points="2 12, 16 12"><animate id="globalnav-anim-menutrigger-bread-bottom-open" attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 2 12, 16 12; 2 9, 16 9; 3.5 15, 15 3.5"></animate><animate id="globalnav-anim-menutrigger-bread-bottom-close" attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 3.5 15, 15 3.5; 2 9, 16 9; 2 12, 16 12"></animate></polyline><polyline id="globalnav-menutrigger-bread-top" class="globalnav-menutrigger-bread globalnav-menutrigger-bread-top" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" points="2 5, 16 5"><animate id="globalnav-anim-menutrigger-bread-top-open" attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 2 5, 16 5; 2 9, 16 9; 3.5 3.5, 15 15"></animate><animate id="globalnav-anim-menutrigger-bread-top-close" attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 3.5 3.5, 15 15; 2 9, 16 9; 2 5, 16 5"></animate></polyline></svg></a></li>
+                    </ul>
+                </nav>
+                <div class="sublist store">
+                    <ul class="sub-list view">
+                        AirPods 살펴보기
+                        <li class="sub-item"><a href="">AirPods 2세대</a></li>
+                        <li class="sub-item"><a href="">AirPods 3세대</a></li>
+                        <li class="sub-item"><a href="">AirPods Pro 2세대</a></li>
+                        <li class="sub-item"><a href="">AirPods Max</a></li>
+                    </ul>
+                    <ul class="sub-list shop">
+                        AirPods 쇼핑하기
+                        <li class="sub-item"><a href="">AirPods 쇼핑하기</a></li>
+                        <li class="sub-item"><a href="">AirPods 액세서리</a></li>
+                    </ul>
+                    <ul class="sub-list etc">
+                        그 외 AirPods 관련 항목
+                        <li class="sub-item"><a href="">AirPods 지원</a></li>
+                        <li class="sub-item"><a href="">Apple Music</a></li>
+                    </ul>
+                </div>
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="">스토어<i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li class="menu-item"><a href="">Mac<i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li class="menu-item"><a href="">iPad<i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li class="menu-item"><a href="">iPhone<i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li class="menu-item"><a href="">Watch<i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li class="menu-item"><a href="">AirPods<i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li class="menu-item"><a href="">TV 및 홈<i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li class="menu-item"><a href="">엔터테인먼트<i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li class="menu-item"><a href="">액세서리<i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li class="menu-item"><a href="">지원<i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li class="btn-close"><a href=""><span class="blind">닫기버튼</span><i class="fa-solid fa-xmark"></i></a></li>
+                </ul>
+            </div>
+        </header>
+
+        
+        <nav class="lnb">
+            <ul class="lnb-list">
+                <li class="lnb-item">
+                    <div class="title-area">
+                        <h2 class="title"><a href="">Mac mini</a></h2>
+                    </div>
+                </li>
+                <li class="lnb-item">
+                    <ul class="sub-list">
+                        <li class="sub-item link outline"><a href="" class="">개요</a></li>
+                        <li class="sub-item link sub"><a href="" class="">Mac을 선택하는 이유</a></li>
+                        <li class="sub-item link spec"><a href="" class="">제품 사양</a></li>
+                        <li class="sub-item btn-util"><a href=""><span class="blind">유틸리티 버튼</span><i class="fa-solid fa-chevron-down"></i></a></li>
+                        <li class="sub-item link order"><a href="" class="">구입하기</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+
+        <main class="container">
+            <aside class="event"><p class="desc">Apple 교육 할인 스토어에서 Mac mini를 더욱 저렴하게 구입할 수 있습니다.*<a href="" class="link-more">쇼핑하기<i class="fa-solid fa-chevron-right"></i></a></p></aside>
+
+
+            <section class="sc-visual">
+                <div class="group-visual">
+                    <div class="img-box">
+                        <img src="./assets/images/main-visual.jpg" alt="m2를 탑재한 mac mini는 더 많은 일들을 더 빠르게 처리하는 데 필요한 속도를 갖추고 있습니다.">
+                    </div>
+                    <div class="txt-wrap">
+                        <div class="txt-box">
+                            <h2 class="headline">Mac mini</h2>
+                            <strong class="title">더 야무지게.<br>더 빠릿하게.</strong>
+                            <p class="desc">M2를 탑재한 Mac mini는 더 많은 일들을 더 빠르게 처리하는 데 필요한 속도를 갖추고 있습니다. Mac mini에 처음 적용되는 프로용 칩인 M2 Pro는 Mac mini를 완전히 새로운 차원으로 끌어올립니다. 여기에 모든 상황과 주변기기에 대응 가능한 다양한 포트까지 갖춰 어떤 용도에도 최적인 데스크탑이 되어줍니다. 어떤 칩 모델을 선택하든 말이죠.</p>
+                        </div>
+                        <p class="price">₩850,000부터</p>
+                        <a href="" class="link-more">발표 동영상 보기<i class="fa-regular fa-circle-play"></i></a>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="sc-chip">
+                <h2 class="blind">mac mini 칩 성능</h2>
+                <div class="group-chip">
+                    
+                    <div class="chip-area">
+                        <h3 class="headline">막강한 성능의</h3>
+                        <div class="chip-wrap">     
+                            <div class="flex-wrap">
+                                <div class="img-wrap">
+                                    <div class="img-box">
+                                        <img src="./assets/images/m2.png" alt="m2 칩 성능">
+                                    </div>
+                                    <div class="txt-box m2">
+                                        <p class="desc">8코어 CPU</p>
+                                        <p class="desc">10코어 GPU</p>
+                                        <p class="desc">최대 24GB 통합 메모리</p>
+                                        <p class="desc">100GB/s 메모리 대역폭</p>
+                                    </div>
+                                </div>
+                                <div class="img-wrap">
+                                    <div class="img-box">
+                                        <img src="./assets/images/m2-pro.png" alt="m2 pro 칩 성능">
+                                    </div>
+                                    <div class="txt-box m2p">
+                                        <p class="desc">최대 12코어 CPU</p>
+                                        <p class="desc">최대 19코어 GPU</p>
+                                        <p class="desc">최대 32GB 통합 메모리</p>
+                                        <p class="desc">200GB/s 메모리 대역폭</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="txt-wrap">
+                                <p class="desc">차세대 Apple Silicon 덕분에 Apple 사상 최고의 성능을 자랑하는 Mac mini가 탄생했습니다. 다채로운 프레젠테이션부터 몰입감 넘치는 게임까지, 일할 때든 즐길 때든 M2가 쏜살같이 빠른 속도를 선사하죠. 또한 M2 Pro의 경우 막대한 이미지와 8K ProRes 동영상을 편집할 때처럼 상당한 컴퓨팅 성능을 필요로 하는 작업도 가뿐합니다.</p>
+                            </div>
+                            <div class="btn-box">
+                                <a href="" class="link-more">M2 및 M2 Pro 심층 탐구<i class="fa-solid fa-circle-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="overlay-bg"></div>
+                    </div>
+                    
+                    <div class="perfom-area">
+                        <div class="perfom-wrap">
+                            <strong class="perfom-title">속도 및 성능</strong>
+                            <strong class="title">Intel 기반 Mac mini 대비</strong>
+                            <div class="tab-box">
+                                <a href="" class="tab active">사진 편집</a>
+                                <span>/</span>
+                                <a href="" class="tab">이미지 업스케일링</a>
+                                <span>/</span>
+                                <a href="" class="tab">동영상 편집</a>
+                                <span>/</span>
+                                <a href="" class="tab">동영상 변환</a>
+                                <span>/</span>
+                                <a href="" class="tab">코드 컴파일링</a>
+                                <span>/</span>
+                                <a href="" class="tab">생산성</a>
+                            </div>
+                            <p class="desc">Photoshop의 더 빠른 필터 및 함수 성능</p>
+                            <div class="bar-box m2p">
+                                <i class="bar"></i>
+                                <span>4.7배</span>
+                                <p>M2 Pro 탑재 Mac mini</p>
+                            </div>
+                            <div class="bar-box m2">
+                                <i class="bar"></i>
+                                <span>3.5배</span>
+                                <p>M2 탑재 Mac mini</p>
+                            </div>
+                            <div class="bar-box m1">
+                                <i class="bar"></i>
+                                <p>M1 탑재 Mac mini</p>
+                            </div>
+                            <div class="bar-box imac">
+                                <i class="bar"></i>
+                                <p>Core i7 및 Radeon Pro 5500 XT 탑재 iMac 27</p>
+                            </div>
+                            <div class="bar-box macmini">
+                                <i class="bar"></i>
+                                <p>Core i7 탑재 Mac mini<br>(기준치)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="compatibility-area">
+                        <div class="compatibility-wrap">
+                            <h3 class="headline-sm">호환성</h3>
+                            <div class="txt-box">
+                                <strong class="title">Mini는 뭐든 척척.</strong>
+                                <p class="desc">macOS Ventura를 구동하는 Mac mini에서는 Microsoft 365부터 Adobe Creative Cloud와 Zoom에 이르기까지 당신이 즐겨 쓰는 앱이 전광석화처럼 빠르게 실행됩니다. 이미 15,000개가 넘는 앱과 플러그인이 M2 및 M2 Pro에 최적화되어 있죠. ‘스테이지 매니저’로 앱과 윈도우를 정리해보세요. 여러 작업을 오가는 중에도 집중력을 유지하도록 작업 화면을 구성할 수 있습니다. SharePlay 기능으로 멀티플레이어 게임 세션에 몰입해 즐겨볼까요? 아니면 해야 할 일 목록을 iPhone에서 작성하자마자 Mac mini에서 바로 챙길 수도 있답니다.</p>
+                            </div>
+                            <div class="img-box">
+                                <img src="./assets/images/compatibility.png" alt="호환성: 맥 미니는 마이크로소프트 365부터 어도비와 줌에 이르기까지 즐겨쓰는 앱을 빠르게 실행합니다.">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-area">
+                        <div class="design-wrap">
+                            <h3 class="headline-sm">디자인</h3>
+                            <p class="desc">M2와 M2 Pro 중 무엇을 선택하든 Apple Silicon의 뛰어난 성능과 효율성 덕분에 Mac mini는 몇 배나 더 큰 데스크탑을 거뜬히 압도하는 성능을 발휘합니다. 고유의 19.7cm 정사각형 외장에서 말이죠.</p>
+                            <div class="content-box">
+                                <div class="img-box">
+                                    <img src="./assets/images/design.png" alt="19.7cm 정사각형 외장의 맥 미니">
+                                </div>
+                                <div class="txt-box">
+                                    <p class="desc big">압도적 성능.<br>야무진 사이즈.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="memory-wrap">
+                            <h3 class="headline-sm">통합 메모리</h3>
+                            <div class="img-box">
+                                <img src="./assets/images/memory.png" alt="메모리 사진">
+                            </div>
+                            <div class="txt-box">
+                                <p class="desc"><span>잊지 못할 메모리.</span> Mac의 통합 메모리는 기존 RAM이 가진 단순한 저장 장치 이상의 역할을 해냅니다. 고대역폭과 저지연성을 자랑하는 단일 풀의 메모리로서 Apple Silicon이 데이터 이동을 더욱 효율적으로 처리할 수 있게 해줘 당신이 하는 모든 일들이 매끄럽게 진행되죠. Mac mini의 메모리는 M2의 경우 8GB와 24GB 사이에서, M2 Pro의 경우 16GB 또는 32GB로 구성할 수 있습니다.</p>
+                            </div>
+                        </div>
+                        <div class="ssd-wrap">
+                            <h3 class="headline-sm">고속 SSD 저장 장치</h3>
+                            <div class="txt-box">
+                                <p class="desc">Mac mini에는 무려 최대 8TB SSD까지 확장할 수 있는 flash로만 구성된 저장 장치가 탑재되어 있어, 당신의 모든 사진 및 동영상, 파일, 앱을 넉넉히 보관할 수 있습니다.8 이전 세대보다 무려 4배나 증가되었으니까요.</p>
+                            </div>
+                            <div class="img-box">
+                                <img src="./assets/images/ssd.png" alt="맥 미니의 최대 저장 공간 8tb">
+                            </div>
+                        </div>
+                        <div class="privacy-wrap">
+                            <h3 class="headline-sm">개인 정보 보호 및 보안</h3>
+                            <p class="desc">M2와 macOS Ventura 덕분에 Mac mini는 악성코드 및 바이러스로부터의 기본 보호 기능을 포함해 업계를 선도하는 동급 최강의 개인 정보 보호 및 보안 기능을 자랑합니다. 그리고 차세대 Secure Enclave가 시스템과 데이터를 안전하게 지켜주죠.</p>
+                            <div class="content-box">
+                                <div class="img-box"><span class="blind">프라이버시 사진</span></div>
+                                <div class="txt-box">
+                                    <p class="desc big">언제나 철저하게.</p>
+                                    <p class="desc big">언제나 안전하게.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="sc-versatility">
+                <div class="group-versatility">
+                    <div class="headline-wrap">
+                        <h2 class="headline">다용성<br><span class="point">뭐든 준비 완료.</span></h2>
+                        <p class="desc">새로운 차원의 성능, 다양한 포트, 콤팩트한 사이즈를 갖춘 이 미니 데스크탑은 <span class="point">놀랍도록 광범위한 쓰임새를 자랑합니다.</span> 어떤 작업이라도 처리할 만반의 준비가 되어있는 셈이죠.</p>
+                    </div>
+                    <div class="img-wrap productivity">
+                        <div class="img-box"><img src="./assets/images/versatility.jpg" alt="강력한 작업 공간으로 변신하는 맥미니 어떤 일이든 문제 없죠."></div>
+                        <div class="tab-box">
+                            <a href="" class="tab productivity active">생산성</a>
+                            <a href="" class="tab video">오디오 및 영상 제작</a>
+                            <a href="" class="tab game">게임</a>
+                        </div>
+                        <div class="txt-box">
+                            <p class="desc">그 어떤 책상이든 Mac mini를 올려놓는 순간 강력한 작업 공간으로 변신합니다. 디스플레이, 키보드 그리고 마우스나 트랙패드를 추가하면 창작, 코딩, 협업까지 어떤 일이든 문제 없죠.</p>
+                        </div>
+                    </div>
+                    <div class="img-wrap video">
+                        <div class="img-box"><img src="./assets/images/video.jpg" alt="콘텐츠 제작에 알맞은 강력한 데스크탑으로 더 많은 플로그인과 오디오 트랙을 레이어할 수 있고 여러 동영상을 편집할 수도 있죠."></div>
+                        <div class="tab-box">
+                            <a href="" class="tab productivity">생산성</a>
+                            <a href="" class="tab video active">오디오 및 영상 제작</a>
+                            <a href="" class="tab game">게임</a>
+                        </div>
+                        <div class="txt-box">
+                            <p class="desc">Mac mini는 콘텐츠 제작에 알맞은 강력한 데스크탑입니다. Logic Pro에서 더 많은 플러그인을 실행하고 더 많은 오디오 트랙을 레이어링할 수 있죠. 게다가 4K 및 8K ProRes 동영상 스트림 여러 개를 편집할 수 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="sc-connection">
+                <div class="group-connection">
+                    <div class="headline-wrap">
+                        <h2 class="headline">연결성<br><span class="point">가능성을 포용하다.</span></h2>
+                        <p class="desc">2개 또는 4개의 Thunderbolt 4 포트, 2개의 USB-A 포트, HDMI, Wi‑Fi 6E 그리고 기가비트 이더넷까지 갖춘 <span class="point">Mac mini에는 무엇이든 마음껏 연결할 수 있습니다.</span>9 더욱 빠른 네트워킹 속도를 원한다면 Mac mini를 처리량이 최대 10배 더 많은 10Gb 이더넷으로도 구성할 수 있죠.</p>
+                    </div>
+                    <div class="img-wrap m2">
+                        <div class="img-box">
+                            <img src="./assets/images/connection.jpg" alt="m2의 이더넷, thunderbolt, hdmi, usb-a, 헤드폰 잭 포트 사진">
+                        </div>
+                        <div class="info-box">
+                            <span class="info ethernet">이더넷</span>
+                            <span class="info thunderbolt">Thunderbolt 4</span>
+                            <span class="info hdmi">HDMI</span>
+                            <span class="info usba">USB-A</span>
+                            <span class="info headphone">헤드폰 잭</span>
+                        </div>
+                        <div class="tab-box">
+                            <a href="" class="tab m2 active">M2</a>
+                            <a href="" class="tab">M2 Pro</a>
+                        </div>
+                        
+                    </div>
+                    <div class="img-wrap m2p">
+                        <div class="img-box">
+                            <img src="./assets/images/connection-02.jpg" alt="m2 프로의 이더넷, thunderbolt, hdmi, usb-a, 헤드폰 잭 포트 사진">
+                        </div>
+                        <div class="info-box">
+                            <span class="info ethernet">이더넷</span>
+                            <span class="info thunderbolt">Thunderbolt 4</span>
+                            <span class="info hdmi">HDMI</span>
+                            <span class="info usba">USB-A</span>
+                            <span class="info headphone">헤드폰 잭</span>
+                        </div>
+                        <div class="tab-box">
+                            <a href="" class="tab">M2</a>
+                            <a href="" class="tab m2p active">M2 Pro</a>
+                        </div>
+                        
+                    </div>
+                    <div class="flex-wrap">
+                        <div class="thunderbolt-wrap">
+                            <div class="img-box"><span class="blind">thunderbolt4의 배경</span></div>
+                            <div class="txt-box">
+                                <h3 class="headline-sm">Thunderbolt 4</h3>
+                                <p class="desc">최대 40Gb/s의 속도로 데이터를 전송할 수 있습니다.10 외장 기기의 충전 및 전원 공급도 가능하죠. 게다가 Thunderbolt 4를 통해 최대 6K의 해상도와 60Hz로 동영상을 출력할 수 있는 외장 디스플레이를 연결해 작업 공간을 확장할 수 있습니다. HDMI로는 최대 8K 동영상 출력도 가능하죠.</p>
+                            </div>
+                        </div>
+                        <div class="wifi-wrap">
+                            <h3 class="headline-sm">Wi-Fi 6E</h3>
+                            <div class="txt-box">
+                                <p class="desc">Mac mini에 처음 도입되는 또 하나의 기능인 Wi-Fi 6E는 전면적인 성능 향상을 통한 최대 2.4Gb/s의 처리량을 선사해 파일 전송이나 Time Machine 백업 등을 엄청나게 빠른 속도로 처리해냅니다.</p>
+                            </div>
+                            <div class="content-box">
+                                <div class="img-box">
+                                    <img src="./assets/images/wifi.png" alt="wifi 최대 2.4gb/s의 처리량">
+                                </div>
+                                <div class="txt-box">
+                                    <p class="desc big">Wi-Fi 6E</p>
+                                    <p class="desc">최대 2.4Gb/s의 처리량</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="sc-accessories">
+                <div class="group-accessories">
+                    <h2 class="headline">액세서리<br><span class="point">데스크탑 경험의 완성.</span></h2>
+                    <p class="desc">경이로운 68.3cm 5K Retina 디스플레이, 센터 스테이지 기술이 적용된 12MP 카메라, 하이파이 6 스피커 사운드 시스템을 갖춘 Studio Display로 Mac mini의 활용성을 극대화할 수 있습니다. 여기에 Touch ID 탑재형 Magic Keyboard와 같은 편리한 무선 Magic 액세서리를 더하면 완벽한 작업 컴퓨터가 완성됩니다.</p>
+                    <a href="" class="link-more">Studio Display에 대해 더 알아보기<i class="fa-solid fa-chevron-right"></i></a>
+                    <a href="" class="link-more">Magic 액세서리 쇼핑하기<i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <div class="img-box">
+                    <img src="./assets/images/accessory.jpg" alt="studio display로 미니의 활용성을 극대화 할 수 있습니다.">
+                </div>
+            </section>
+
+
+            <section class="sc-router">
+                <h2 class="blind">mac mini 부가적인 요소</h2>
+                <div class="group-router">
+                    <div class="ar-area">
+                        <div class="inner">
+                            <div class="txt-wrap">
+                                <div class="img-box"><img src="./assets/images/ar-icon.png" alt="ar 아이콘 사진"></div>
+                                <strong class="title">당신의 작업 공간에 놓인<br> Mac mini의 모습, <br>AR로 보기.</strong>
+                                <p class="desc">iPhone 또는 iPad에서 이 페이지를 Safari로 열어보세요.</p>
+                            </div>
+                            <div class="img-bg">
+                                <img src="./assets/images/ar.jpg" alt="아이폰 또는 아이패드로 맥 미니 ar 확인">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="credit-area">
+                        <div class="inner">
+                            <div class="txt-wrap">
+                                <h3 class="headline-sm">Apple Trade In</h3>
+                                <strong class="title">새 Mac mini 구매 시 <br>사용할 수 있는<br> 크레딧을 받는 법.**</strong>
+                                <p class="desc">보상 판매 대상 컴퓨터를 새 기기 구입 시 사용할 수 있는 크레딧으로 교환해드리거나, 무상으로 재활용해드립니다. 기기의 가치를 최대한 활용하는 것, 당신은 물론 지구에게도 좋은 일이죠.</p>
+                                <a href="" class="link-more">더 알아보기<i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                            <div class="img-wrap">
+                                <div class="img-bg">
+                                    <img src="./assets/images/credit.jpg" alt="애플 크레딧 배경 사진">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommend-area">
+                        <div class="inner">
+                            <strong class="title">당신에게 맞는 데스크탑은?</strong>
+                            <a href="" class="link-more">모든 Mac 모델 비교하기<i class="fa-solid fa-chevron-right"></i></a>
+                            <div class="flex-box">
+                                <div class="col">
+                                    <div class="img-box"><img src="./assets/images/recomm-mini.png" alt="맥 미니 사진"></div>
+                                    <div class="color-box">
+                                        <img src="./assets/images/color-gray.png" alt="회색 컬러">
+                                    </div>
+                                    <span class="badge new">New</span>
+                                    <strong class="title">Mac mini</strong>
+                                    <p class="price">₩850,000부터</p>
+                                    <p class="desc">Apple M2<br> 또는 Apple M2 Pro 칩</p>
+                                    <p class="desc">8코어부터 최대 12코어 CPU</p>
+                                    <p class="desc">10코어부터 최대 19코어 GPU</p>
+                                    <p class="desc">8GB부터 최대 32GB 통합 메모리</p>
+                                    <p class="desc">256GB부터 최대 8TB 저장 장치8</p>
+                                    <div class="link-box">
+                                        <a href="" class="link order">구입하기</a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="img-box"><img src="./assets/images/recomm-studio.png" alt="맥 스튜디오 사진"></div>
+                                    <div class="color-box">
+                                        <img src="./assets/images/color-gray.png" alt="회색 컬러">
+                                    </div>
+                                    <strong class="title">Mac Studio</strong>
+                                    <p class="price">₩2,690,000부터</p>
+                                    <p class="desc">Apple M1 Max<br> 또는 Apple M1 Ultra 칩</p>
+                                    <p class="desc">10코어 또는 20코어 CPU</p>
+                                    <p class="desc">24코어부터 최대 64코어 GPU</p>
+                                    <p class="desc">32GB부터 최대 128GB 통합 메모리</p>
+                                    <p class="desc">512GB부터 최대 8TB 저장 장치8</p>
+                                    <div class="link-box">
+                                        <a href="" class="link order">구입하기</a>
+                                        <a href="" class="link-more">더 알아보기<i class="fa-solid fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="img-box imac"><img src="./assets/images/recomm-imac.png" alt="아이맥 사진"></div>
+                                    <div class="color-box imac">
+                                        <img src="./assets/images/color.png" alt="7개의 다양한 컬러">
+                                    </div>
+                                    <strong class="title">iMac</strong>
+                                    <p class="price">₩1,790,000부터</p>
+                                    <p class="desc">Apple M1 칩</p>
+                                    <p class="desc">8코어 CPU</p>
+                                    <p class="desc">7코어 또는 8코어 GPU</p>
+                                    <p class="desc">8GB 또는 16GB 통합 메모리</p>
+                                    <p class="desc">256GB부터 최대 2TB 저장 장치8</p>
+                                    <p class="desc">4.5K Retina 디스플레이<br>218 ppi</p>
+                                    <div class="link-box">
+                                        <a href="" class="link order">구입하기</a>
+                                        <a href="" class="link-more">더 알아보기<i class="fa-solid fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accessory-area">
+                        <div class="inner">
+                            <div class="txt-wrap">
+                                <h3 class="headline-sm">액세서리</h3>
+                                <strong class="title">Mac 액세서리<br>살펴보기.</strong>
+                                <a href="" class="link order">쇼핑하기</a>
+                            </div>
+                        </div>
+                        <div class="img-bg"><img src="./assets/images/mac-acc.jpg" alt="맥 액세서리 살펴보기"></div>
+                    </div>
+                    <div class="flex-area">
+                        <div class="environment-wrap">
+                            <div class="img-box"><img src="./assets/images/envion-apple.png" alt="에코 애플 로고 "></div>
+                            <div class="txt-box">
+                                <strong class="title"><span class="accent-green">지구를</span> 염두에 둔 설계.</strong>
+                                <div class="desc">우리는 환경에 미치는 영향을 최소화하고 탄소중립 목표를 지원할 수 있도록 Mac mini를 디자인했습니다. 외장에 100% 재활용 알루미늄을 사용하고 포장재에 사용되는 대부분의 펄프는 책임감 있게 관리되는 산림에서 조달되도록 노력을 기울입니다.</div>
+                                <a href="" class="link-more">Apple과 환경에 대해 더 알아보기<i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="continuity-wrap">
+                            <div class="txt-box">
+                                <h3 class="headline-sm">연속성</h3>
+                                <strong class="title">당신의 모든 기기가<br> 하나처럼 연결된 경험.</strong>
+                                <a href="" class="link-more">더 알아보기<i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                            <div class="img-box">
+                                <img src="./assets/images/continuty.jpg" alt="애플의 다양한 기기와 연동되는 애플의 연속성">
+                            </div>
+                        </div>
+                        <div class="education-wrap">
+                            <div class="img-box"><span class="blind">애플과 교육 배경 사진</span></div>
+                            <div class="txt-box">
+                                <strong class="title">Apple과 교육</strong>
+                                <p class="desc">더 나은 세상을 만들 수 있는 힘을 교육자와 학생들에게.</p>
+                                <a href="" class="link-more">Apple과 교육에 대해 알아보기<i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="work-wrap">
+                            <div class="img-box"><span class="blind">애플 비즈니스 배경 사진</span></div>
+                            <div class="txt-box">
+                                <strong class="title">Apple at Work</strong>
+                                <p class="desc">비즈니스를 한 단계 더 도약시키는 막강한 힘</p>
+                                <a href="" class="link-more">Apple at Work에 대해 알아보기<i class="fa-solid fa-chevron-right"></i></a>
+                                <a href="" class="link-more">비즈니스를 위한 Mac에 대해 더 알아보기<i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <footer class="footer">
+            <div class="group-footer">
+                <div class="info-wrap">
+                    <div class="benefit-area">
+                        <ul class="benefit-list">
+                            <li class="benefit-item">
+                                <div class="icon-box">
+                                    <span class="blind">금융혜택 아이콘</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 56">
+                                        <path fill="#86868b" d="M12.94,26.67h.86l-1-6.33a2.34,2.34,0,0,1-.08-.52.91.91,0,0,1,1-.9,1,1,0,0,1,1,.86l.91,6.89h1.9l1.31-6.76a1.1,1.1,0,0,1,1.13-1,1.12,1.12,0,0,1,1.15.95l1.31,6.76h1.92l.93-6.89a.94.94,0,0,1,1-.84.87.87,0,0,1,1,.88,2.07,2.07,0,0,1-.06.45l-1,6.4h.84a.77.77,0,0,1,.8.8.79.79,0,0,1-.8.82H26l-1.21,7.87a1.06,1.06,0,0,1-1.1.94,1,1,0,0,1-1.09-.92L21,28.27h-2.1l-1.49,7.89a1,1,0,0,1-1.07.92,1.07,1.07,0,0,1-1.1-.94l-1.23-7.87H12.94a.78.78,0,0,1-.8-.8A.77.77,0,0,1,12.94,26.67Zm3.5,6.41.85-4.83H15.87Zm4.33-6.41L20,22.47l-.74,4.2Zm2.81,6.49.61-4.91H22.71Z"/>
+                                        <path fill="#86868b" d="M20,10.7A17.3,17.3,0,1,1,2.7,28,17.32,17.32,0,0,1,20,10.7m0-2.2A19.5,19.5,0,1,0,39.5,28,19.5,19.5,0,0,0,20,8.5Z"/>
+                                    </svg>                                
+                                </div>
+                                <div class="txt-box">
+                                    <strong class="title">금융혜택</strong>
+                                    <p class="desc">무이자 할부를 통해 Apple 제품을<br>부담 없이 구매하실 수 있습니다.</p>
+                                </div>
+                                <a href="" class="link-more">더 알아보기<i class="fa-solid fa-chevron-right"></i></a>
+                            </li>
+                            <li class="benefit-item">
+                                <div class="icon-box">
+                                    <span class="blind">택배 배송 아이콘</span>                                
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 56">
+                                        <path fill="#86868b" d="M33.905,17.063l-14-7.581a3.991,3.991,0,0,0-3.811,0l-14,7.581A4,4,0,0,0,0,20.581V35.419a4,4,0,0,0,2.095,3.518l14,7.581a3.989,3.989,0,0,0,3.811,0l14-7.581A4,4,0,0,0,36,35.419V20.581A4,4,0,0,0,33.905,17.063ZM17.048,11.241a1.993,1.993,0,0,1,1.9,0l13.8,7.47-6.383,3.645L11.943,14.005ZM18,27.133,3.253,18.711l6.629-3.589L24.355,23.5ZM3.048,37.178A2,2,0,0,1,2,35.419V20.581a1.955,1.955,0,0,1,.036-.262L17,28.865V44.733ZM34,35.419a2,2,0,0,1-1.048,1.759L19,44.733V28.865l14.964-8.545a1.955,1.955,0,0,1,.036.262Z"/>
+                                    </svg>
+                                </div>
+                                <div class="txt-box">
+                                    <strong class="title">업무일 기준 무료 익일 배송</strong>
+                                    <p class="desc">오후 3시 이전에 주문된<br>재고 보유 제품에 한합니다.</p>
+                                </div>
+                                <a href="" class="link-more">더 알아보기<i class="fa-solid fa-chevron-right"></i></a>
+                            </li>
+                            <li class="benefit-item">
+                                <div class="icon-box">
+                                    <span class="blind">고객센터 아이콘</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 56">
+                                        <path fill="#86868b" d="m46.5553 27.6681a10.41 10.41 0 0 0 -2.6433-3.176 12.898 12.898 0 0 0 -3.93-2.1507 14.028 14.028 0 0 0 -4.3619-.7538c-.1407-.01-.2814-.01-.4322-.01-.603 0-1.6859.03-2.2588.1005a13.6292 13.6292 0 0 0 -3.0252.6634 13.0173 13.0173 0 0 0 -3.93 2.1507 10.4083 10.4083 0 0 0 -2.6433 3.176 8.4663 8.4663 0 0 0 .1708 8.1609 9.6142 9.6142 0 0 0 1.186 1.588 10.6752 10.6752 0 0 0 1.6885 1.5176l.211.1507a13.86 13.86 0 0 0 4.4131 1.9698 19.1708 19.1708 0 0 0 4.299.4824c.402 0 .8141-.01 1.2262-.04h.1809a20.7883 20.7883 0 0 0 2.2312 1.2763 17.57 17.57 0 0 0 2.1407.8945 5.3063 5.3063 0 0 0 1.5878.3316 1.08 1.08 0 0 0 .7739-.2613.9119.9119 0 0 0 .3216-.6533 1.1967 1.1967 0 0 0 -.2815-.7839c-.221-.2613-.4824-.6031-.804-1.0252a12.5728 12.5728 0 0 1 -.8141-1.196c-.02-.03.04-.1608.07-.1708a10.42 10.42 0 0 0 4.05-3.4875 8.448 8.448 0 0 0 1.5183-4.8443 8.2907 8.2907 0 0 0 -.9447-3.9096zm-2.2312 7.6282a8.3359 8.3359 0 0 1 -3.2966 2.8142 2.1523 2.1523 0 0 0 -1.0854 1.3266 2.0632 2.0632 0 0 0 .1709 1.6382c.01.02.02.03.03.05-.11-.05-.2211-.1-.3417-.1608a18.6866 18.6866 0 0 1 -2.02-1.1559 2.1979 2.1979 0 0 0 -1.2362-.3215h-.1709c-.3618.03-.7236.04-1.0754.04a16.721 16.721 0 0 1 -3.7965-.4221 12.4286 12.4286 0 0 1 -2.985-1.186c-.2713-.1508-.5427-.3216-.794-.4925a7.5181 7.5181 0 0 1 -1.0251-.8241 7.8848 7.8848 0 0 1 -1.4674-1.7991 6.4587 6.4587 0 0 1 -.1308-6.1804 8.4059 8.4059 0 0 1 2.151-2.5729 10.9211 10.9211 0 0 1 3.3065-1.8091 12.7522 12.7522 0 0 1 3.1458-.6232c.3216-.02 1.1533-.03 1.4849-.03.3619 0 .7237.01 1.0855.04a12.4791 12.4791 0 0 1 3.0553.6131 11.0977 11.0977 0 0 1 3.3167 1.8092 8.4173 8.4173 0 0 1 2.1307 2.5628 6.213 6.213 0 0 1 .7135 2.9649 6.4836 6.4836 0 0 1 -1.1658 3.7186zm-13.4241-19.6254a18.268 18.268 0 0 0 -5.5981-3.0654 23.2813 23.2813 0 0 0 -7.2238-1.1055 20.7964 20.7964 0 0 0 -6.8443 1.1055 18.1537 18.1537 0 0 0 -5.5981 3.0654 14.5464 14.5464 0 0 0 -3.7689 4.5327 11.7279 11.7279 0 0 0 -1.3568 5.568 13.6656 13.6656 0 0 0 2.1608 7.4147 15.1353 15.1353 0 0 0 5.8492 5.0252.0845.0845 0 0 1 .04.1105 15.9945 15.9945 0 0 1 -1.176 1.779c-.4522.603-.8241 1.0954-1.1357 1.4673a1.6471 1.6471 0 0 0 -.4019 1.1156 1.3831 1.3831 0 0 0 .4522.9347 1.576 1.576 0 0 0 1.1156.3719 7.3006 7.3006 0 0 0 2.2513-.4724 26.4909 26.4909 0 0 0 3.0654-1.2764 28.1581 28.1581 0 0 0 3.196-1.789 1.6481 1.6481 0 0 1 .191-.09c.6633.05 1.3166.08 1.96.08a24.1784 24.1784 0 0 0 5.6563-.6533c.1307-.03.2513-.07.3719-.1005a11.8356 11.8356 0 0 1 -1.5677-1.6889 22.3119 22.3119 0 0 1 -4.46.4322c-.5829 0-1.1859-.03-1.8091-.07l-.07-.01h-.08a2.3717 2.3717 0 0 0 -1.2764.412 27.0214 27.0214 0 0 1 -2.985 1.6684 25.586 25.586 0 0 1 -2.8342 1.186c-.1206.04-.2312.08-.3417.1105.1005-.1306.211-.2713.3216-.4221a20.518 20.518 0 0 0 1.3066-1.99 2.0973 2.0973 0 0 0 -.8845-2.9046 13.1092 13.1092 0 0 1 -5.0855-4.3618 11.6 11.6 0 0 1 -1.8202-6.279 9.7382 9.7382 0 0 1 1.1156-4.6332 12.672 12.672 0 0 1 3.2663-3.91 16.232 16.232 0 0 1 4.9851-2.7236 18.7722 18.7722 0 0 1 6.191-.995 21.1057 21.1057 0 0 1 6.5609.995 16.1166 16.1166 0 0 1 4.985 2.7236 13.5029 13.5029 0 0 1 2.07 2.0805 17.1418 17.1418 0 0 1 2.3015-.2412 14.7186 14.7186 0 0 0 -3.0954-3.3968z"/>
+                                    </svg>                                
+                                </div>
+                                <div class="txt-box">
+                                    <strong class="title">도움이 필요하다면</strong>
+                                    <p class="desc">질문이 있으신가요? 전문가와 전화로<br>상담하거나 온라인으로 채팅하세요.<br>080-330-8877로 전화 주세요.</p>
+                                </div>
+                                <a href="" class="link-more">문의하기<i class="fa-solid fa-chevron-right"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info-area">
+                        <ul class="info-list">
+                            <li class="info-item">* 교육 할인 혜택은 대학교 재학생 및 입학 예정자, 그들을 대신하여 구매하는 학부모, 교직원에게 적용됩니다. 자세한 내용은 <a href="">apple.com/kr-edu/shop</a>을 참고하십시오.</li>
+                            <li class="info-item">** 보상 판매 금액은 보상 판매 대상이 되는 제품의 상태, 연도, 구성에 따라 달라집니다. 일부 기기는 보상 판매 대상이 아닙니다. 크레딧 또는 Apple Store Gift Card로 보상 판매를 받으려면 19세 이상이어야 합니다. 보상 판매 금액은 적용 가능한 새 기기 구입 시 적용하거나 Apple Store Gift Card로 받을 수 있습니다. 최종 확정 금액은 보상 판매 대상 기기를 수령한 후, 예상 금액 산정 시 제시한 기기의 설명과 일치하는지 비교 검수 후 정해집니다. 부가세는 새로 구입한 기기의 총액을 바탕으로 부과됩니다. 일부 매장에서는 보상 판매를 제공하지 않으며, 매장 내 보상 판매와 온라인 보상 판매 프로그램 간 내용에 차이가 있을 수 있습니다. 일부 매장은 추가 요구 사항이 있을 수 있습니다. Apple 또는 보상 판매 파트너사는 어떤 보상 판매도 거래를 거부하거나, 보상 판매 수량을 제한할 권리를 보유합니다. 적용 가능 기기의 보상 판매 및 재활용에 대한 자세한 내용은 Apple의 보상 판매 파트너사에서 확인할 수 있습니다. 규제 및 제한이 적용될 수 있습니다. 보상 판매 프로그램은 Apple의 파트너이자 독립적으로 운영되는 제3의 업체에 의해 제공됩니다. Apple 및 Apple의 계열사는 고객과 파트너 간 계약의 당사자가 아닙니다.</li>
+                            <li class="info-item">
+                                <ol class="sub-list">
+                                    <li class="sub-item">테스트는 2022년 11월과 12월 Apple에서 Apple M2 Pro, 12코어 CPU, 19코어 GPU 및 16GB RAM을 탑재한 Mac mini 시제품과 Apple M2, 8코어 CPU, 10코어 GPU 및 24GB RAM을 탑재한 Mac mini 시제품 그리고 Apple M1, 8코어 CPU, 8코어 GPU 및 8GB RAM을 탑재한 Mac mini 판매용 제품을 사용해 진행했습니다. 성능 테스트는 업계 표준의 특정 벤치마크를 사용해 실시했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac mini의 대략적인 성능을 반영합니다.</li>
+                                    <li class="sub-item">테스트는 2022년 11월과 12월 Apple에서 Apple M2 Pro, 12코어 CPU, 19코어 GPU, 32GB RAM 및 8TB SSD를 탑재한 Mac mini 시제품과 Apple M2, 8코어 CPU, 10코어 GPU, 24GB RAM 및 2TB SSD를 탑재한 Mac mini 시제품, Apple M1, 8코어 CPU, 8코어 GPU, 16GB RAM 및 2TB SSD를 탑재한 Mac mini 판매용 제품, AMD Radeon Pro 5500 XT(8GB GDDR6), 8GB RAM 및 512GB SSD를 탑재한 3.8GHz 8코어 Intel Core i7 기반 iMac 판매용 제품 그리고 Intel Iris UHD Graphics 630, 64GB RAM 및 2TB SSD를 탑재한 3.2GHz 6코어 Intel Core i7 기반 Mac mini 판매용 제품을 사용해 진행했습니다. Adobe Photoshop 24.0.0에서 ‘레이어에서 새 메시 만들기’, ‘구름 효과 2’, ‘조명 효과’, ‘나무’, ‘구형 파노라마’ 등의 필터 및 기능을 사용해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac mini 및 iMac의 대략적인 성능을 반영합니다.</li>
+                                    <li class="sub-item">테스트는 2022년 11월과 12월 Apple에서 Apple M2 Pro, 12코어 CPU, 19코어 GPU, 32GB RAM 및 8TB SSD를 탑재한 Mac mini 시제품과 Apple M2, 8코어 CPU, 10코어 GPU, 24GB RAM 및 2TB SSD를 탑재한 Mac mini 시제품, Apple M1, 8코어 CPU, 8코어 GPU, 16GB RAM 및 2TB SSD를 탑재한 Mac mini 판매용 제품, AMD Radeon Pro 5500 XT(8GB GDDR6), 8GB RAM 및 512GB SSD를 탑재한 3.8GHz 8코어 Intel Core i7 기반 iMac 판매용 제품 그리고 Intel Iris UHD Graphics 630, 64GB RAM 및 2TB SSD를 탑재한 3.2GHz 6코어 Intel Core i7 기반 Mac mini 판매용 제품을 사용해 진행했습니다. Pixelmator Pro 3.1.1에서 216KB 이미지를 사용해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac mini 및 iMac의 대략적인 성능을 반영합니다.</li>
+                                    <li class="sub-item">테스트는 2022년 11월과 12월 Apple에서 Apple M2 Pro, 12코어 CPU, 19코어 GPU, 32GB RAM 및 8TB SSD를 탑재한 Mac mini 시제품과 Apple M2, 8코어 CPU, 10코어 GPU, 24GB RAM 및 2TB SSD를 탑재한 Mac mini 시제품, Apple M1, 8코어 CPU, 8코어 GPU, 16GB RAM 및 2TB SSD를 탑재한 Mac mini 판매용 제품, AMD Radeon Pro 5500 XT(8GB GDDR6), 8GB RAM 및 512GB SSD를 탑재한 3.8GHz 8코어 Intel Core i7 기반 iMac 판매용 제품 그리고 Intel Iris UHD Graphics 630, 64GB RAM 및 2TB SSD를 탑재한 3.2GHz 6코어 Intel Core i7 기반 Mac mini 판매용 제품을 사용해 진행했습니다. Final Cut Pro 10.6.5에서 4K Apple ProRes RAW 미디어로 이루어진 복잡한 2분 분량의 영상을 사용해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac mini 및 iMac의 대략적인 성능을 반영합니다.</li>
+                                    <li class="sub-item">테스트는 2022년 11월과 12월 Apple에서 Apple M2 Pro, 12코어 CPU, 19코어 GPU, 32GB RAM 및 8TB SSD를 탑재한 Mac mini 시제품과 Apple M2, 8코어 CPU, 10코어 GPU, 24GB RAM 및 2TB SSD를 탑재한 Mac mini 시제품, Apple M1, 8코어 CPU, 8코어 GPU, 16GB RAM 및 2TB SSD를 탑재한 Mac mini 판매용 제품, AMD Radeon Pro 5500 XT(8GB GDDR6), 8GB RAM 및 512GB SSD를 탑재한 3.8GHz 8코어 Intel Core i7 기반 iMac 판매용 제품 그리고 Intel Iris UHD Graphics 630, 64GB RAM 및 2TB SSD를 탑재한 3.2GHz 6코어 Intel Core i7 기반 Mac mini 판매용 제품을 사용해 진행했습니다. Final Cut Pro 10.6.5에서 4096x2160 해상도 및 초당 59.94 프레임의 4K Apple ProRes RAW 미디어로 구성된 55초 분량의 영상을 Apple ProRes 422로 인코딩 변환하여 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac mini 및 iMac의 대략적인 성능을 반영합니다.</li>
+                                    <li class="sub-item">테스트는 2022년 11월과 12월 Apple에서 Apple M2 Pro, 12코어 CPU, 19코어 GPU, 32GB RAM 및 8TB SSD를 탑재한 Mac mini 시제품과 Apple M2, 8코어 CPU, 10코어 GPU, 24GB RAM 및 2TB SSD를 탑재한 Mac mini 시제품, Apple M1, 8코어 CPU, 8코어 GPU, 16GB RAM 및 2TB SSD를 탑재한 Mac mini 판매용 제품, AMD Radeon Pro 5500 XT(8GB GDDR6), 8GB RAM 및 512GB SSD를 탑재한 3.8GHz 8코어 Intel Core i7 기반 iMac 판매용 제품 그리고 Intel Iris UHD Graphics 630, 64GB RAM 및 2TB SSD를 탑재한 3.2GHz 6코어 Intel Core i7 기반 Mac mini 판매용 제품을 사용해 진행했습니다. 오픈 소스 프로젝트는 Apple Clang 14.0.0, Ninja 1.10.0.git, CMake 3.25.0‑rc2를 지원하는 배포 전 단계의 Xcode 13.0을 사용해 빌드되었습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac mini 및 iMac의 대략적인 성능을 반영합니다.</li>
+                                    <li class="sub-item">테스트는 2022년 11월과 12월 Apple에서 Apple M2 Pro, 12코어 CPU, 19코어 GPU, 32GB RAM 및 8TB SSD를 탑재한 Mac mini 시제품과 Apple M2, 8코어 CPU, 10코어 GPU, 24GB RAM 및 2TB SSD를 탑재한 Mac mini 시제품, Apple M1, 8코어 CPU, 8코어 GPU, 16GB RAM 및 2TB SSD를 탑재한 Mac mini 판매용 제품, AMD Radeon Pro 5500 XT(8GB GDDR6), 8GB RAM 및 512GB SSD를 탑재한 3.8GHz 8코어 Intel Core i7 기반 iMac 판매용 제품 그리고 Intel Iris UHD Graphics 630, 64GB RAM 및 2TB SSD를 탑재한 3.2GHz 6코어 Intel Core i7 기반 Mac mini 판매용 제품을 사용해 진행했습니다. Microsoft Excel v16.67을 사용해 다양한 작업을 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac mini 및 iMac의 대략적인 성능을 반영합니다.</li>
+                                    <li class="sub-item">1GB = 10억 바이트, 1TB = 1조 바이트입니다. 실제 포맷된 용량은 더 적습니다.</li>
+                                    <li class="sub-item">Wi‑Fi 6E는 중국 본토에서는 지원되지 않습니다. 일본에서는 macOS 13.2 이후 버전이 필요합니다.</li>
+                                    <li class="sub-item">속도는 이론적 처리량에 근거한 수치이며 실제 결과는 다를 수 있습니다.</li>
+                                </ol>
+                            </li>
+                            <li class="info-item">콘텐츠는 별도로 판매됩니다. 각 앱의 출시 여부는 변경될 수 있습니다.</li>
+                            <li class="info-item">No Man’s Sky는 올겨울 출시 예정입니다. 출시 여부는 지역에 따라 변경될 수 있습니다.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="link-wrap">
+                    <ul class="breadcrumbs-list">
+                        <li class="breadcrumbs-item">
+                            <a href="" class="img-box">
+                                <span class="blind">애플 푸터 로고</span>
+                                <svg height="44" viewBox="0 0 14 44" width="14" class="logo-sm" xmlns="http://www.w3.org/2000/svg"><path d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"></path></svg>
+                            </a>
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8px" height="36px" viewBox="0 0 8 36" xml:space="preserve"> <defs> <symbol id="seperator"> <path d="M1.29,0.98L7.5,9l-6.21,8.01l-0.68-0.54L6.42,9l-5.8-7.49L1.29,0.98z" /> </symbol> </defs> <use xlink:href="#seperator" x="0" y="0" fill="#d6d6d6" /> </svg>
+                        </li>
+                        <li class="breadcrumbs-item"><a href="">Mac</a><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8px" height="36px" viewBox="0 0 8 36" xml:space="preserve"> <defs> <symbol id="seperator"> <path d="M1.29,0.98L7.5,9l-6.21,8.01l-0.68-0.54L6.42,9l-5.8-7.49L1.29,0.98z" /> </symbol> </defs> <use xlink:href="#seperator" x="0" y="0" fill="#d6d6d6" /> </svg></li>
+                        <li class="breadcrumbs-item"><a href="">Mac mini</a></li>
+                    </ul>
+                    <div class="flex-area">
+                        <div class="col">
+                            <strong class="link-title shopping">쇼핑 및 알아보기<i class="fa-thin fa-plus"></i></strong>
+                            <ul class="shopping-list">
+                                <li class="shopping-item"><a href="">스토어</a></li>
+                                <li class="shopping-item"><a href="">Mac</a></li>
+                                <li class="shopping-item"><a href="">iPad</a></li>
+                                <li class="shopping-item"><a href="">iPhone</a></li>
+                                <li class="shopping-item"><a href="">Watch</a></li>
+                                <li class="shopping-item"><a href="">AirPods</a></li>
+                                <li class="shopping-item"><a href="">TV 및 홈</a></li>
+                                <li class="shopping-item"><a href="">AirTag</a></li>
+                                <li class="shopping-item"><a href="">엑세서리</a></li>
+                            </ul>
+                            <strong class="link-title wallet">Apple 지갑<i class="fa-thin fa-plus"></i></strong>
+                            <ul class="wallet-list">
+                                <li class="wallet-item"><a href="">지갑</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <strong class="link-title account">계정<i class="fa-thin fa-plus"></i></strong>
+                            <ul class="account-list">
+                                <li class="account-item"><a href="">Apple ID 관리</a></li>
+                                <li class="account-item"><a href="">Apple Store 계정</a></li>
+                                <li class="account-item"><a href="">iCloud.com</a></li>
+                            </ul>
+                            <strong class="link-title entertain">엔터테인먼트<i class="fa-thin fa-plus"></i></strong>
+                            <ul class="entertain-list">
+                                <li class="entertain-item"><a href="">Apple One</a></li>
+                                <li class="entertain-item"><a href="">Apple TV+</a></li>
+                                <li class="entertain-item"><a href="">Apple Music</a></li>
+                                <li class="entertain-item"><a href="">Apple Arcade</a></li>
+                                <li class="entertain-item"><a href="">Apple Podcasts</a></li>
+                                <li class="entertain-item"><a href="">Apple Books</a></li>
+                                <li class="entertain-item"><a href="">Apple Store</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <strong class="link-title store">Apple store<i class="fa-thin fa-plus"></i></strong>
+                            <ul class="store-list">
+                                <li class="store-item"><a href="">매장 찾기</a></li>
+                                <li class="store-item"><a href="">Genius Bar</a></li>
+                                <li class="store-item"><a href="">Today at Apple</a></li>
+                                <li class="store-item"><a href="">Apple 캠프</a></li>
+                                <li class="store-item"><a href="">Apple Store 앱</a></li>
+                                <li class="store-item"><a href="">인증 러퍼비쉬 제품</a></li>
+                                <li class="store-item"><a href="">금융 혜택</a></li>
+                                <li class="store-item"><a href="">Apple Trade In</a></li>
+                                <li class="store-item"><a href="">주문 상태</a></li>
+                                <li class="store-item"><a href="">쇼핑 도움말</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <strong class="link-title business">비즈니스<i class="fa-thin fa-plus"></i></strong>
+                            <ul class="business-list">
+                                <li class="business-item">Apple과 비즈니스</li>
+                                <li class="business-item">비즈니스를 위한 제품 쇼핑하기</li>
+                            </ul>
+                            <strong class="link-title education">교육<i class="fa-thin fa-plus"></i></strong>
+                            <ul class="education-list">
+                                <li class="education-item"><a href="">Apple과 교육</a></li>
+                                <li class="education-item"><a href="">초중고용 제품 쇼핑하기</a></li>
+                                <li class="education-item"><a href="">대학 생활을 위한 제품 쇼핑하기</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <strong class="link-title values">Apple의 가치관<i class="fa-thin fa-plus"></i></strong>
+                            <ul class="values-list">
+                                <li class="values-item"><a href="">손쉬운 사용</a></li>
+                                <li class="values-item"><a href="">교육</a></li>
+                                <li class="values-item"><a href="">환경</a></li>
+                                <li class="values-item"><a href="">개인정보 보호</a></li>
+                                <li class="values-item"><a href="">협력업체에 대한 책임</a></li>
+                            </ul>
+                            <strong class="link-title info">Apple 정보<i class="fa-thin fa-plus"></i></strong>
+                            <ul class="info-list">
+                                <li class="info-item"><a href="">Newroom</a></li>
+                                <li class="info-item"><a href="">Apple 리더십</a></li>
+                                <li class="info-item"><a href="">채용 안내</a></li>
+                                <li class="info-item"><a href="">윤리 및 규정 준수</a></li>
+                                <li class="info-item"><a href="">이벤트</a></li>
+                                <li class="info-item"><a href="">일자리 창출</a></li>
+                                <li class="info-item"><a href="">Apple 연락처</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service-area">
+                        <p class="txt-service">다양한 쇼핑 방법: <a href="" class="link-store">Apple Store를 방문</a>하거나, <a href="" class="resell">리셀러</a>를 찾아보거나, 080-330-8877번으로 전화하세요.</p>
+                    </div>
+                    <address class="address">
+                        <div class="locale">대한민국</div>  
+                        <p class="copy">Copyright © 2023 Apple Inc. 모든 권리 보유.</p>
+                        <ul class="legal-list">
+                            <li class="legal-item"><a href="">개인정보 처리방침</a></li>
+                            <li class="legal-item"><a href="">웹 사이트 이용 약관</a></li>
+                            <li class="legal-item"><a href="">판매 및 환불</a></li>
+                            <li class="legal-item"><a href="">법적 고지</a></li>
+                            <li class="legal-item"><a href="">사이트 맵</a></li>
+                        </ul>
+                    </address>
+                </div>
+            </div>
+
+
+        </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://kit.fontawesome.com/ee92c86fad.js" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      
+    </script>
+</body>
+</html>
