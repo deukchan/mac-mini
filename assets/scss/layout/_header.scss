@@ -1,7 +1,9 @@
 .header{
+  // display: none;
   background: #1d1d1f;
   height: auto;
-  z-index: 200;  
+  z-index: 200; 
+  width: 100%; 
   .group-header{
     display: flex;
     align-items: center;
@@ -67,6 +69,9 @@
     gap: 250px;
     padding-top: 20px;
     color: rgb(134, 134, 139);
+    @include mobile {
+      display: none;
+    }
     .view{
       margin-left: -380px;
       @include desktop-sm {
@@ -109,6 +114,9 @@
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s;
+    @include mobile {
+      padding: 40px 20px;
+    }
     .menu-item{
       font-size: 24px;
       margin-bottom: 14px;

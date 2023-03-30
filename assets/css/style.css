@@ -156,6 +156,7 @@ body {
   background: #1d1d1f;
   height: auto;
   z-index: 200;
+  width: 100%;
 }
 .header .group-header {
   display: flex;
@@ -226,6 +227,11 @@ body {
   padding-top: 20px;
   color: rgb(134, 134, 139);
 }
+@media (max-width: 767px) {
+  .header .sublist {
+    display: none;
+  }
+}
 .header .sublist .view {
   margin-left: -380px;
 }
@@ -267,6 +273,11 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s;
+}
+@media (max-width: 767px) {
+  .header .menu-list {
+    padding: 40px 20px;
+  }
 }
 .header .menu-list .menu-item {
   font-size: 24px;
