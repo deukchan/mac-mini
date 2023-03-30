@@ -79,34 +79,15 @@ $(function(){
   /**
    * @footer
    */
+
   $('.footer .link-title').click(function() {
-    if ($(this).hasClass('shopping')) {
-      $('.shopping-list').toggle();
+    if ($(this).hasClass('second')) {
+      $(this).siblings('ul:eq(1)').toggle();
+    }else{
+      $(this).siblings('ul:eq(0)').toggle();
     }
-    if ($(this).hasClass('wallet')) {
-      $('.wallet-list').toggle();
-    }
-    if ($(this).hasClass('account')) {
-      $('.account-list').toggle();
-    }
-    if ($(this).hasClass('entertain')) {
-      $('.entertain-list').toggle();
-    }
-    if ($(this).hasClass('store')) {
-      $('.store-list').toggle();
-    }
-    if ($(this).hasClass('business')) {
-      $('.business-list').toggle();
-    }
-    if ($(this).hasClass('education')) {
-      $('.education-list').toggle();
-    }
-    if ($(this).hasClass('values')) {
-      $('.values-list').toggle();
-    }
-    if ($(this).hasClass('info')) {
-      $('.info-list').toggle();
-    }
+
+    
   })
 
 })
